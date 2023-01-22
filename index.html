@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="mar.jpg" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+          MARKHOOR
+        </div>
+        <form class="p-3 mt-3">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="userName" id="userName" placeholder="Email">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="password" id="pwd" placeholder="Password">
+            </div >
+           
+            <button id="btnl" class="btn mt-3">Login</button>
+    
+            <button id="btns" class="btn mt-3">Sign up</button>
+            <div class="adu">
+                <label for="admin" id="adminl">Admin</label>
+                <input  type="radio" name="role" id="admin" value="Admin">
+
+
+                <label for="user" id="userl">User</label>
+                <input type="radio" name="role" id="User" value="User">
+            </div>
+           
+
+        </form>
+
+     
+
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+    
+    
+    <script>
+    
+    
+            const firebaseConfig = {
+        apiKey: "AIzaSyDMe-LGPlNSvIHvxT9bOSRD1orOb5FtxEc",
+        authDomain: "authapp-57c11.firebaseapp.com",
+        databaseURL: "https://authapp-57c11-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "authapp-57c11",
+        storageBucket: "authapp-57c11.appspot.com",
+        messagingSenderId: "971899586992",
+        appId: "1:971899586992:web:0165593d4dee2f2aa86e75"
+      };
+    
+            // const app = initializeApp(firebaseConfig);
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="app.js"></script>
+          
+        <!-- <div class="text-center fs-6">
+            <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+        </div> -->
+    </div>
+</body>
+</html>

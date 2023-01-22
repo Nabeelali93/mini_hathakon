@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body style="background-color: cadetblue;">
+
+   <h1 style="text-align: center;"><span style="color: rgb(234, 181, 111);">Admin</span>Panal</h1>
+    <input type="text" name="" id="dish" placeholder="Dish Name">
+   <br> <br>
+   <input type="text" name="" id="price" placeholder="Prce">
+   <br> <br>
+   <input type="text" name="" id="title" placeholder="Title">
+   <br> <br>
+
+   <form action="#">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" accept="image/*" id="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  </form>  
+   <button id="upload"  > Upload image </button>
+
+ 
+
+   <button type="submit" id="submit" > Submit</button>
+
+
+ 
+
+    
+    
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+ 
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+<script>
+
+
+        const firebaseConfig = {
+    apiKey: "AIzaSyDMe-LGPlNSvIHvxT9bOSRD1orOb5FtxEc",
+    authDomain: "authapp-57c11.firebaseapp.com",
+    databaseURL: "https://authapp-57c11-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "authapp-57c11",
+    storageBucket: "authapp-57c11.appspot.com",
+    messagingSenderId: "971899586992",
+    appId: "1:971899586992:web:0165593d4dee2f2aa86e75"
+  };
+
+        // const app = initializeApp(firebaseConfig);
+        firebase.initializeApp(firebaseConfig);
+    </script>
+  <script src="admin.js"></script>
+
+</body>
+</html>
